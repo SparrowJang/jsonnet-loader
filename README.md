@@ -16,6 +16,22 @@ npm install --save-dev jsonnet-loader
 var json = require("jsonnet!./config.jsonnet");
 ```
 
+
+### webpack config
+
+```js
+module.exports = {
+  module: {
+    loaders: [
+      {
+        test: /\.jsonnet$/,
+        loader: "jsonnet"
+      }
+    ]
+  }
+};
+```
+
 ## Test
 
 ```sh
