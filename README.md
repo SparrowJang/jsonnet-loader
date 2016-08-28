@@ -12,6 +12,8 @@ npm install --save-dev jsonnet-loader
 
 ## Usage
 
+Load a `config.jsonnet` to json format.
+
 ```js
 var json = require("jsonnet!./config.jsonnet");
 ```
@@ -31,6 +33,8 @@ module.exports = {
   }
 };
 ```
+Then you only need to write: `require("./config.jsonnet")`.
+
 
 ## Test
 
