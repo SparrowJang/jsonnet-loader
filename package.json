@@ -12,6 +12,10 @@
     "mocha": "^3.0.2",
     "webpack": "^1.13.2"
   },
+ "repository": {
+    "type": "git",
+    "url": "git://github.com/SparrowJang/jsonnet-loader.git"
+  },
  "keywords": [
     "jsonnet",
     "webpack"
