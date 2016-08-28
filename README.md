@@ -1,5 +1,6 @@
 jsonnet-loader for webpack
 ==========================================
+[![Build Status](https://travis-ci.org/SparrowJang/jsonnet-loader.svg?branch=master)](https://travis-ci.org/SparrowJang/jsonnet-loader)
 
 The loader is able to require jsonnet file for webpack.
 
