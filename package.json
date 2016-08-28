@@ -1,0 +1,21 @@
+{
+  "name": "jsonnet-loader",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description":"The loader is able to require jsonnet file for webpack.",
+  "scripts": {
+    "test": "node --no-deprecation node_modules/.bin/_mocha -R spec"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsonnet": "^0.5.0-beta",
+    "mocha": "^3.0.2",
+    "webpack": "^1.13.2"
+  },
+ "keywords": [
+    "jsonnet",
+    "webpack"
+  ],
+  "author": "Sparrow.jang",
+  "license": "MIT"
+}
