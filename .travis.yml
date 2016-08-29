@@ -13,7 +13,7 @@ before_script:
   - python setup.py build
   - sudo python setup.py install
   - ( cd python ; ./run_tests.sh )
-  - cp jsonnet ~/
-script:
+  - cd ../..
   - cp ~/jsonnet node_modules/jsonnet-exec/bin/
+script:
   - npm run test
