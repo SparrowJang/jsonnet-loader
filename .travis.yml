@@ -4,4 +4,12 @@ compiler:
   - clang
 node_js:
   - "stable"
+before_script:
+  - git clone https://github.com/google/jsonnet
+  - cd jsonnet
+  - set -e
+  - make test
+  - python setup.py build
+  - sudo python setup.py install
+  - ( cd python ; ./run_tests.sh )
 script: npm run test
