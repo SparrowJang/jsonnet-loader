@@ -6,8 +6,6 @@ node_js:
   - "stable"
 sudo: required
 before_script:
-  - sudo apt-get update
-  - sudo apt-get install libc6:i386 libstdc++6:i386
   - git clone https://github.com/google/jsonnet
   - cd jsonnet
   - set -e
@@ -15,4 +13,7 @@ before_script:
   - python setup.py build
   - sudo python setup.py install
   - ( cd python ; ./run_tests.sh )
-script: npm run test
+  - cp jsonnet ~/
+script:
+  - cp ~/jsonnet node_modules/jsonnet-exec/bin/
+  - npm run test
