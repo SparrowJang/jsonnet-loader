@@ -7,6 +7,9 @@ module.exports = function(content) {
   var cb = this.async();
   this.cacheable && this.cacheable();
 
-  jsonnetExec.exec(this.resourcePath, (err, stdout, stderror) => cb(null, `module.exports = ${stdout}`));
+  jsonnetExec.exec(this.resourcePath, (err, stdout, stderror) => {
+    console.log(arguments);
+    cb(null, `module.exports = ${stdout}`)
+  });
 };
 
