@@ -4,7 +4,10 @@ compiler:
   - clang
 node_js:
   - "stable"
+sudo: required
 before_script:
+  - sudo apt-get update
+  - sudo apt-get install libc6:i386 libstdc++6:i386
   - git clone https://github.com/google/jsonnet
   - cd jsonnet
   - set -e
